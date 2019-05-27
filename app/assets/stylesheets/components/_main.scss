@@ -1,0 +1,139 @@
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: block, flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner {
+  position: relative;
+  background-image: url('#');
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF0EA;
+  padding: 200px 0px;
+  margin: 0px;
+  opacity: 0.9;
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 164px;
+  right: 127px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px black;
+  color: #706677;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.banner h2 {
+  position: absolute;
+  bottom: 136px;
+  right: 124px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 18px;
+  text-shadow: 1px 1px 5px black;
+}
+
+
+.banner h3 {
+  position: absolute;
+  bottom: 95px;
+  right: 131px;
+}
+
+.btn-enroll {
+  text-decoration: none;
+  background-color: #CCB7AE;
+  box-shadow: 0 0 10px gray;
+  color: #ffffff;
+  padding: 7px 25px;
+  border: 0px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.8;
+  margin: 10px;
+}
+
+.btn-enroll:hover {
+  text-decoration: none;
+  background-color: #565264;
+  box-shadow: 0 0 10px gray;
+  color: #ffffff;
+  padding: 7px 25px;
+  border: 0px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+  opacity: 1.3;
+}
+
+.text-center {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-shadow: 0 2px white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top:20px;
+  margin-bottom: -20px;
+  font-weight: bold;
+}
+.cards {
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #FFFAF7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  justify-content: center;
+  display: inline-block;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+  color: #706677;
+  border: 1px solid rgb(230,230,230);
+  padding: 40px;
+  margin: 60px;
+}
+
+.card i {
+  color: #A6808C;
+  font-size: 20px;
+  justify-content: center;
+  display: inline-block;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
