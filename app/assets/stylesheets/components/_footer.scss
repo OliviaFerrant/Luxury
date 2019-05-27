@@ -1,13 +1,16 @@
 .footer {
 /*  background: #706677;*/
+  text-align: center;
   background-image:
     linear-gradient(
       to top right,
       #7F7F91, #2A2B2E);
   color: #FFFFFF;
-  font-size: 15px;
-  padding: 10px;
-  text-align: center;
+  padding: 15px;
+}
+
+.footer p {
+  font-size: 12px;
 }
 
 .footer a {
@@ -16,19 +19,8 @@
 }
 
 .footer i {
+  font-size: 15px;
+  letter-spacing: 5px;
   text-decoration: none;
   color: #CCB7AE
 }
-
-ul#list-inline {
-  min-width:200px;
-  list-style: none;
-  padding-top: 10px;
-}
-
-ul#list-inline li {
-    display: inline;
-}
-
-
-
