@@ -1,1 +1,71 @@
 // Specific CSS for your home-page
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  display: block, flex;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner {
+  position: relative;
+  // background-image: url('#');
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF0EA;
+  padding: 200px 0px;
+  margin: 0px;
+  opacity: 0.9;
+}
+
+.cards {
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #FFFAF7;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+  justify-content: center;
+  display: inline-block;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+  color: #706677;
+  border: 1px solid rgb(230,230,230);
+  padding: 40px;
+  margin: 60px;
+}
+
+.card i {
+  color: #A6808C;
+  font-size: 20px;
+  justify-content: center;
+  display: inline-block;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
