@@ -1,12 +1,19 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: #7F7F91;
+  font-color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-lewagon .navbar-collapse {
+
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.fas {
+color: #2A2B2E;
+}
+
+.navbar-lewagon .navbar-brand img  {
   width: 40px;
 }

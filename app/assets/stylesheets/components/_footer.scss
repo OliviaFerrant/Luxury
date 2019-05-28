@@ -1,0 +1,26 @@
+.footer {
+  background-image:
+    linear-gradient(
+      to top right,
+      #7F7F91, #2A2B2E);
+  color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer i {
+  text-decoration: none;
+  word-spacing: 5px;
+  font-size: 18px;
+  color: #CCB7AE
+}
