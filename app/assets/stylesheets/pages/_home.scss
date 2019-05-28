@@ -1,1 +1,62 @@
 // Specific CSS for your home-page
+
+.container {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cards {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card {
+  background-color: #FFFAF7;
+  justify-content: center;
+  display: inline-block;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+  color: #706677;
+  border: 1px solid rgb(230,230,230);
+  padding: 40px;
+  margin: 60px;
+}
+
+.card p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.card i {
+  color: #A6808C;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
