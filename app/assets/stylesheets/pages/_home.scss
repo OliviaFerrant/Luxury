@@ -1,5 +1,8 @@
 // Specific CSS for your home-page
 
+#page-container {  position: relative;  min-height: 100vh;}
+#content-wrap {  padding-bottom: 2.5rem;    /* Footer height */}
+
 .carousel {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #7F7F91;
@@ -53,6 +56,7 @@ h3 {
   color: #A6808C;
   font-size: 40px;
   justify-content: center;
+  margin: 10px;
   padding: 10px;
 }
 

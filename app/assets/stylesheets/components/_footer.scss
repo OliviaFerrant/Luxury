@@ -1,17 +1,18 @@
 .footer {
   background-image:
-    linear-gradient(
-      to top right,
-      #7F7F91, #2A2B2E);
+     linear-gradient(
+       to top right,
+       #7F7F91, #2A2B2E);
   color: #FFFFFF;
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  position: absolute;
+  padding: 0px;
   left: 0;
   right: 0;
-  position: absolute;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
+  bottom: 0;
   width: 100%;
+  height: 80px;
 }
 
 .footer p {
@@ -20,7 +21,8 @@
 
 .footer i {
   text-decoration: none;
-  letter-spacing: 10px;
+  letter-spacing: 16px;
   font-size: 18px;
-  color: #CCB7AE
+  color: #CCB7AE;
+  margin-top: 20px;
 }
