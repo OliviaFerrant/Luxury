@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_items, only: [:show, :edit, :update, :destroy]
+
   def index
     @items = Item.all
   end
@@ -13,11 +14,12 @@ class ItemsController < ApplicationController
 
   def create
     @item = Item.new(item_params)
-    @item.user = @user
+    @item.user = current_user
     if @item.save
       redirect_to item_path(@item)
     else
       render :new
+    end
   end
 
   def edit
@@ -27,12 +29,11 @@ class ItemsController < ApplicationController
     if @item.update
       redirect_to item_path(@item)
     else
-      render :update
+      render :edit
     end
   end
 
   def destroy
-    @item = Item.find(params[:id])
     @item.destroy
     redirect_to items_path
   end
