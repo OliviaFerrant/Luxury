@@ -5,7 +5,7 @@ class ItemPolicy < ApplicationPolicy
     end
   end
 
-  def show
+  def show?
     true
   end
 
@@ -17,7 +17,7 @@ class ItemPolicy < ApplicationPolicy
     user_is_owner_or_admin?
   end
 
-  def destroy
+  def destroy?
     user_is_owner_or_admin?
   end
 
