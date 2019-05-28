@@ -11,10 +11,14 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= render "layouts/navbar" %>
-    <%= render 'devise/shared/flashes' %>
-    <%= yield %>
-    <%= render "layouts/footer" %>
+    <div id="page-container">
+      <div id="content-wrap">
+        <%= render "layouts/navbar" %>
+        <%= render 'devise/shared/flashes' %>
+        <%= yield %>
+      </div>
+      <%= render "layouts/footer" %>
+    </div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
   </body>
