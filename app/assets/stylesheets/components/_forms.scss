@@ -1,0 +1,69 @@
+// Specific CSS for your home-page
+
+#page-container {  position: relative;  min-height: 100vh;}
+#content-wrap {  padding-bottom: 2.5rem;    /* Footer height */}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  margin: 50px;
+  padding: 0px;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.forms-container {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #FFFAF7;
+  justify-content: center;
+  border-right: 1px #000000;
+  border-left: 1px #000000;
+  width: 800px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px gray;
+  text-align: center;
+  color: #706677;
+  border: 1px solid rgb(230,230,230);
+  padding: 60px;
+  margin: 60px;
+}
+
+.card p {
+  font-family: 'Roboto Condensed', sans-serif;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.col i {
+  color: #A6808C;
+  font-size: 40px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
