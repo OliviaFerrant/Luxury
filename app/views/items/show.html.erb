@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8">
+      <%= @item.category %>
+      <%= @item.name %>
+      <%= @item.brand %>
+      <%= @item.price %>
+      <%= @item.address %>
+      <span>Owner :</span><span><%= @item.user.first_name + @item.user.last_name %></span>
+    </div>
+  </div>
+</div>
