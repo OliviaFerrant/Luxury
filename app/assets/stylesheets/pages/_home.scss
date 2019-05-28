@@ -1,32 +1,18 @@
 // Specific CSS for your home-page
 
 .container {
-  font-family: 'Roboto', sans-serif;
-  display: block, flex;
+  font-family: 'Roboto Condensed', sans-serif;
+  display: block;
   margin: 0 auto;
   padding: 0;
 }
 
-.banner {
-  position: relative;
-  // background-image: url('#');
-  background-size: cover;
-  background-position: center;
-  background-color: #FFF0EA;
-  padding: 200px 0px;
-  margin: 0px;
-  opacity: 0.9;
-}
-
 .cards {
-  justify-content: space-between;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card {
   background-color: #FFFAF7;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  font-weight: lighter;
   justify-content: center;
   display: inline-block;
   width: 200px;
@@ -39,11 +25,16 @@
   margin: 60px;
 }
 
+.card p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
 .card i {
   color: #A6808C;
-  font-size: 20px;
+  font-size: 30px;
   justify-content: center;
-  display: inline-block;
 }
 
 .table {

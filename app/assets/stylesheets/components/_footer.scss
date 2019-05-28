@@ -3,26 +3,24 @@
     linear-gradient(
       to top right,
       #7F7F91, #2A2B2E);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: #FFFFFF;
+  font-family: 'Roboto Condensed', sans-serif;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
 }
 
 .footer p {
   font-size: 12px;
 }
 
-.footer a {
-  text-decoration: none;
-  font-size: 15px;
-}
-
 .footer i {
-  font-size: 15px;
-  letter-spacing: 5px;
   text-decoration: none;
+  word-spacing: 5px;
+  font-size: 18px;
   color: #CCB7AE
 }
