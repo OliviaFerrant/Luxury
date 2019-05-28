@@ -6,17 +6,17 @@ class ItemsController < ApplicationController
   end
 
   def show
-    authorized @item
+    authorize @item
   end
 
   def new
     @item = Item.new
-    authorized @item
+    authorize @item
   end
 
   def create
     @item = Item.new(item_params)
-    authorized @item
+    authorize @item
     @item.user = current_user
     if @item.save
       redirect_to item_path(@item)
@@ -26,11 +26,11 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    authorized @item
+    authorize @item
   end
 
   def update
-    authorized @item
+    authorize @item
     if @item.update
       redirect_to item_path(@item)
     else
@@ -39,7 +39,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    authorized @item
+    authorize @item
     @item.destroy
     redirect_to items_path
   end
