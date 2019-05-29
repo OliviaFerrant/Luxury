@@ -21,7 +21,7 @@ class RentalsController < ApplicationController
     @rental.item = @item
     authorize @rental
     if @rental.save
-      redirect_to rental_path(@rental)
+      redirect_to rentals_path
     else
       render :new
     end
