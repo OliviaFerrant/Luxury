@@ -12,6 +12,7 @@ class RentalsController < ApplicationController
     @rental = Rental.new(rental_params)
     @rental.user = current_user
     @rental.item = @item
+    authorize @rental
     if @rental.save
       redirect_to rental_path(@rental)
     else
@@ -45,6 +46,6 @@ class RentalsController < ApplicationController
   end
 
   def set_item
-    @item = item.find(params[:item_id])
+    @item = Item.find(params[:item_id])
   end
 end
