@@ -1,2 +1,11 @@
-<h1>Rentals#new</h1>
-<p>Find me in app/views/rentals/new.html.erb</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8">
+      <%= simple_form_for [@item, @rental] do |f| %>
+
+        <%= f.full_error :token %>
+        <%= f.submit 'Save your item!' %>
+      <% end %>
+    </div>
+  </div>
+</div>
