@@ -1,4 +1,12 @@
-<h1>Rental Index</h1>
+<center>
+  <h1>Thank you for your rental!</h1>
+<p> An email confirmation will be sent to you with details of your order and return instructions.</p>
+
+<h2>Rental Information</h2>
 <% @rentals.each do |rental| %>
-<p> <%= rental.start_date %> <%= rental.end_date %> <%= rental.item.name %></p>
+<p>Start: <%= rental.start_date %> | Due: <%= rental.end_date %></p>
+<p><%= rental.item.name %></p>
+<p><button type="button" class="btn btn-secondary"><%= link_to "Cancel", rental_path(rental), method: :delete %></button></p>
 <% end %>
+
+</center>
