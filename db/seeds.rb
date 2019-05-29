@@ -6,9 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-items = Item.create(
+items = Item.new(
   name: 'Sea Dweller',
+  photo: 'https://res.cloudinary.com/louixa/image/upload/v1559099736/Screenshot_2019-05-29_12.14.40_cld4fq.png',
   category: 'watch',
   brand: 'Rolex',
   price: 200,
   address: 'Test'  )
+
+items.user = User.first
+items.save
+

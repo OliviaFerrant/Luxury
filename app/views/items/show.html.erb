@@ -1,25 +1,25 @@
-<div class="container">
+<div class = "show">
   <div class="row justify-content-center">
-    <div class="col-12 col-sm-8">
-      <%= @item.category %>
-      <%= @item.name %>
-      <%= @item.brand %>
-      <%= @item.price %>
-      <%= @item.address %>
-      <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
-      <span>Owner :</span><span><%= @item.user.first_name + @item.user.last_name %></span>
+    <div class="col-5">
+        <h1><p><%= @item.brand %> | <%= @item.name %></p></h1>
+        <p>$<%= @item.price %> | 1 DAY</p>
+        <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
+      </div>
+        <div class = "calendar">
+            <div class = "row justify-content-center">
+          <div class="col-10">
+            <%= simple_form_for [@item, @rental] do |f| %>
+            <%= f.input :start_date %>
+            <%= f.input :end_date %>
+            <button type="button" class="btn btn-secondary btn-sm"><%= f.button :submit, "Rent" %></button>
+          <% end %>
+        </div>
+      <!-- <div>
+        <%= month_calendar(attribute: :start_date, end_attribute: :end_date) do |date| %>
+        <%= date.day %>
+        <% end %>
+      </div> -->
     </div>
-    <div class="col-12 col-sm-8">
-      <%= simple_form_for [@item, @rental] do |f| %>
-        <%= f.input :start_date %>
-        <%= f.input :end_date %>
-        <%= f.submit 'Get your item!' %>
-      <% end %>
-    </div>
-    <div>
-      <%= month_calendar(attribute: :start_date, end_attribute: :end_date) do |date| %>
-      <%= date.day %>
-      <% end %>
     </div>
   </div>
 </div>
