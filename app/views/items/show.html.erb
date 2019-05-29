@@ -9,5 +9,17 @@
       <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
       <span>Owner :</span><span><%= @item.user.first_name + @item.user.last_name %></span>
     </div>
+    <div class="col-12 col-sm-8">
+      <%= simple_form_for [@item, @rental] do |f| %>
+        <%= f.input :start_date %>
+        <%= f.input :end_date %>
+        <%= f.submit 'Get your item!' %>
+      <% end %>
+    </div>
+    <div>
+      <%= month_calendar(attribute: :start_date, end_attribute: :end_date) do |date| %>
+      <%= date %>
+      <% end %>
+    </div>
   </div>
 </div>
