@@ -1,11 +1,11 @@
 <h2><p><u>Watches</u></p></h2>
   <div class = "grid m-5 background-color: #F4F4F4;">
+    <% @items.each do |item| %>
     <div class = "card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559020160/john-torcasio-662169-unsplash-min_v4acae.jpg" >
-      <a href="/items/1">
-        <p class="text-center p-2">Rolex</p>
-      </a>
+      <p class="text-center p-2"><%= link_to "Rolex", item_path(item) %></p>
     </div>
+    <% end %>
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559014777/janfillem-623483-unsplash-min_suemro.jpg">
       <a href="/items/2">
@@ -15,7 +15,7 @@
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559024457/Crazy_Hours_3_-_8880_CH_ksxby0.jpg">
       <a href="/items/8">
-        <p class="text-center p-2">Franck Muller</p>
+        <p class="text-center p-2">Frank Muller</p>
       </a>
     </div>
     <div class="card">
