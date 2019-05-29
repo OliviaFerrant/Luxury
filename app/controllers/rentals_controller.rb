@@ -7,10 +7,12 @@ class RentalsController < ApplicationController
 
   def new
     @rental = Rental.new
+    authorize @rental
   end
 
   def create
     @rental = Rental.new(rental_params)
+    authorize @rental
     @rental.user = current_user
     @rental.item = @item
     if @rental.save
@@ -22,10 +24,12 @@ class RentalsController < ApplicationController
 
   def edit
     @rental = Rental.find(params[:id])
+    authorize @rental
   end
 
   def update
     @rental = Rental.find(params[:id])
+    authorize @rental
     if @rental.update(rental_params)
       redirect_to rental_path(@rental)
     else
@@ -35,6 +39,7 @@ class RentalsController < ApplicationController
 
   def destroy
     @rental = Rental.find(params[:id])
+    authorize @rental
     @rental.destroy
     redirect_to rentals_path
   end
@@ -46,6 +51,6 @@ class RentalsController < ApplicationController
   end
 
   def set_item
-    @item = item.find(params[:item_id])
+    @item = Item.find(params[:item_id])
   end
 end
