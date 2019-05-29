@@ -2,6 +2,7 @@ class RentalsController < ApplicationController
   before_action :set_item, only: [:new, :create]
 
   def show
+    authorize @rental
   end
 
   def new
