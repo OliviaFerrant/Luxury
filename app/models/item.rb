@@ -5,4 +5,5 @@ class Item < ApplicationRecord
   validates :price, presence: true
   validates :address, presence: true
   belongs_to :user
+  has_many :rentals
 end
