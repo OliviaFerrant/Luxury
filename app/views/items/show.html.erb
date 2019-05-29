@@ -1,25 +1,23 @@
 <div class = "show">
   <div class="row justify-content-center">
-    <div class="col-5">
-        <h1><p><%= @item.brand %> | <%= @item.name %></p></h1>
-        <p>$<%= @item.price %> | 1 DAY</p>
-        <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
-      </div>
+    <div class="col-6">
+      <h1><p><%= @item.brand %> | <%= @item.name %></p></h1>
+      <p>$<%= @item.price %> | 1 DAY</p>
+      <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
+    </div>
         <div class = "calendar">
-            <div class = "row justify-content-center">
-          <div class="col-10">
+          <div class="col-12">
             <%= simple_form_for [@item, @rental] do |f| %>
             <%= f.input :start_date %>
             <%= f.input :end_date %>
             <button type="button" class="btn btn-secondary btn-sm"><%= f.button :submit, "Rent" %></button>
-          <% end %>
+            <% end %>
+          </div>
         </div>
       <!-- <div>
         <%= month_calendar(attribute: :start_date, end_attribute: :end_date) do |date| %>
         <%= date.day %>
         <% end %>
       </div> -->
-    </div>
-    </div>
   </div>
 </div>
