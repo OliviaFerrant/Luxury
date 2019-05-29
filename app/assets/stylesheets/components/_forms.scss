@@ -3,18 +3,6 @@
 #page-container {  position: relative;  min-height: 100vh;}
 #content-wrap {  padding-bottom: 2.5rem;    /* Footer height */}
 
-.carousel {
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color: #7F7F91;
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.carousel-item{
-    height: 500px;
-}
-
 h2 {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
@@ -29,7 +17,7 @@ h3 {
   margin: 0 auto;
 }
 
-.container {
+.forms-container {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #FFFAF7;
   justify-content: center;
@@ -48,7 +36,7 @@ h3 {
 .card p {
   font-family: 'Roboto Condensed', sans-serif;
   justify-content: center;
-  font-size: 24px;
+  font-size: 12px;
   font-weight: lighter;
 }
 
