@@ -1,6 +1,10 @@
 class RentalsController < ApplicationController
   before_action :set_item, only: [:new, :create]
 
+  def index
+    @rentals = policy_scope(Rental)
+  end
+
   def show
     authorize @rental
   end
