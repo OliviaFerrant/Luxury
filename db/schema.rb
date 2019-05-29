@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_05_28_234609) do
+=======
+ActiveRecord::Schema.define(version: 2019_05_28_062654) do
+>>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +43,7 @@ ActiveRecord::Schema.define(version: 2019_05_28_234609) do
     t.index ["user_id"], name: "index_rentals_on_user_id"
   end
 
+<<<<<<< HEAD
   create_table "reviews", force: :cascade do |t|
     t.string "description"
     t.integer "rating"
@@ -50,6 +55,8 @@ ActiveRecord::Schema.define(version: 2019_05_28_234609) do
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
+=======
+>>>>>>> master
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -68,6 +75,9 @@ ActiveRecord::Schema.define(version: 2019_05_28_234609) do
   add_foreign_key "items", "users"
   add_foreign_key "rentals", "items"
   add_foreign_key "rentals", "users"
+<<<<<<< HEAD
   add_foreign_key "reviews", "items"
   add_foreign_key "reviews", "users"
+=======
+>>>>>>> master
 end
