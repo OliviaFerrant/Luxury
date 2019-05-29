@@ -1,4 +1,4 @@
 <h1>Rental Index</h1>
 <% @rentals.each do |rental| %>
-<p> <%= rental.start_date %> <%= rental.end_date %> <%= rental.item %></p>
+<p> <%= rental.start_date %> <%= rental.end_date %> <%= rental.item.name %></p>
 <% end %>
