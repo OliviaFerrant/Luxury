@@ -13,4 +13,7 @@ class Item < ApplicationRecord
     using: {
       tsearch: { prefix: true }
     }
+
+  CATEGORIES = ["Watches", "Bags"]
+  BRANDS = ["Rolex"]
 end
