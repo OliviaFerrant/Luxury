@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class = "left-text">
 <%= link_to "LUXURY", root_path, class: "navbar-brand" %> | <form class="form-inline">
-      <%= form_tag items_path, method: :get do %>
+      <%= form_tag items_path(category: params[:category]), method: :get do %>
       <%= text_field_tag :brand,
         params[:brand],
         class: "form-control",

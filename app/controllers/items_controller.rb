@@ -4,10 +4,11 @@ class ItemsController < ApplicationController
   CATEGORIES = ["Watches", "Bags"]
 
   def index
+    # raise
     if params[:category].present?
       @items = policy_scope(Item.where(category: params[:category]))
-    elsif params[:brand].present?
-      @items = policy_scope(Item.where(category: params[:category], brand: params[:brand]))
+    elsif params[:brand].present? && params[:category].present?
+      @items = policy_scope(Item.where(brand: "%#{params[:brand]}%", category: params[:category]))
     else
       @items = policy_scope(Item)
     end
