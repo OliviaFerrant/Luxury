@@ -20,7 +20,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to "RENT", root_path, class: "nav-link" %>
+        <%= link_to "RENT", choose_category_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
         <%= link_to "DEAL", new_item_path, class: "nav-link" %>
@@ -37,8 +37,8 @@
 <i class="fas fa-user-circle"></i>
   </button>
   <div class="dropdown-menu">
-    <%= link_to "PROFILE", edit_user_registration_path, class: "nav-link" %>
-    <%= link_to "LOGOUT", "#", class: "nav-link" %>
+    <%= link_to "PROFILE", rentals_path, class: "nav-link" %>
+    <%= link_to "LOGOUT", destroy_user_session_path, class: "nav-link" %>
     <%= link_to "HELP", "#", class: "nav-link" %>
     <%= link_to "CONTACT", "#", class: "nav-link" %>
   </div>
