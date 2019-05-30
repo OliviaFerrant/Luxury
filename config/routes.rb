@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :rentals, only: [:new, :create]
   end
   resources :rentals, only: [:index, :show, :destroy]
+  get "category", to: "pages#category_page"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
