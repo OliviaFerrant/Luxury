@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class = "left-text">
-<%= link_to "LUXURY", root_path, class: "navbar-brand" %> |
+<%= link_to "LUXURY", root_path, class: "navbar-brand" %>
       <%= form_tag(items_path(category: params[:category]), { method: :get, class: "form-inline" }) do %>
       <%= hidden_field_tag :category,
         params[:category],
@@ -11,8 +11,9 @@
       <%= text_field_tag :query,
         params[:query],
         class: "form-control",
-        placeholder: "Find a name"
+        placeholder: "Search..."
       %>
+      <%= button_to :submit, "Search", class: "btn btn-secondary" %>
     <% end %>
   </div>
 
