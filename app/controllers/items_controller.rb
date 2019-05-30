@@ -1,7 +1,6 @@
 class ItemsController < ApplicationController
   before_action :set_items, only: [:show, :edit, :update, :destroy]
 
-  CATEGORIES = ["Watches", "Bags"]
 
   def index
     # raise
