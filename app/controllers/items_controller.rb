@@ -1,9 +1,13 @@
 class ItemsController < ApplicationController
   before_action :set_items, only: [:show, :edit, :update, :destroy]
 
+  CATEGORIES = ["Watches", "Bags"]
+
   def index
-    if params[:query].present?
-      @items = policy_scope(Item.search_by_name(params[:query]))
+    if params[:category].present?
+      @items = policy_scope(Item.where(category: params[:category]))
+    elsif params[:brand].present?
+      @items = policy_scope(Item.where(category: params[:category], brand: params[:brand]))
     else
       @items = policy_scope(Item)
     end
