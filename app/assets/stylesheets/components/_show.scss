@@ -18,10 +18,17 @@
   text-align: center;
   color: #706677;
   border: 1px solid rgb(230,230,230);
-  padding: 40px;
+  padding: 45px;
 }
 
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
 }
 
+.sexy_line {
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
