@@ -5,10 +5,10 @@
     width: 50%;
   }
 }
-html, body {
-  height: 100%;
-  min-height: 18em;
-}
+// html, body {
+//   height: 100%;
+//   min-height: 18em;
+// }
 
 .frontend-side {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1509347667906-54410f16042d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
@@ -168,6 +168,3 @@ html, body {
 .big {
   font-weight:800;
 }
-
-
-

@@ -7,4 +7,10 @@ class Item < ApplicationRecord
   validates :address, presence: true
   belongs_to :user
   has_many :rentals
+  include PgSearch
+  pg_search_scope :search_by_name,
+    against: [:brand, :category, :name, :address],
+    using: {
+      tsearch: { prefix: true }
+    }
 end

@@ -1,8 +1,20 @@
 class ItemsController < ApplicationController
   before_action :set_items, only: [:show, :edit, :update, :destroy]
 
+  CATEGORIES = ["Watches", "Bags"]
+
   def index
-    @items = policy_scope(Item).order(brand: :asc)
+    # raise
+    @items = policy_scope(Item)
+    if params[:category].present? && params[:query].present?
+      # @items = policy_scope(Item.where(category: params[:category]))
+      @items = @items.search_by_name(params[:query]).where(category: params[:category])
+    elsif params[:query].present?
+      @items = @items.search_by_name(params[:query])
+    elsif params[:category].present?
+      @items = @items.where(category: params[:category])
+      # @items = policy_scope(Item.where(brand: "%#{params[:brand]}%", category: params[:category]))
+    end
   end
 
   def show

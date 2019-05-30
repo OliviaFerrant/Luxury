@@ -4,26 +4,9 @@
     <div class = "card">
       <img class="card-img-top" src="<%= cl_image_path item.photo, height: 300, width: 400, crop: :fill %>" >
       <p class="text-center p-2"><%= link_to item.name, item_path(item) %> $<%= item.price %> per DAY</p>
+      <p><%= item.category %></p>
     </div>
     <% end %>
-    <div class="card">
-      <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559014777/janfillem-623483-unsplash-min_suemro.jpg" alt="IWC">
-      <a href="/items/2">
-        <p class="text-center">IWC</p>
-      </a>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559114442/Replica-Franck-Muller-8880_a4wily.jpg" alt="Franck Muller">
-      <a href="/items/8">
-        <p class="text-center p-2">Franck Muller</p>
-      </a>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559024770/Hublot-Classic-Fusion-Aerofusion-Chronograph-Orlinski-1_m7srkn.jpg" alt="Hublot">
-      <a href="/items/9">
-        <p class="text-center p-2">Hublot</p>
-      </a>
-    </div>
   </div>
 
 <h2><p><u>Purses</u></p></h2>
