@@ -1,15 +1,19 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>LUXURY    | <i class="fas fa-home"></i>
-  <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class = "left-text">
+<%= link_to "LUXURY", root_path, class: "navbar-brand" %> | &nbsp &nbsp <input type="text" name="search" placeholder="Search..">
+  </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-          <%= link_to "RENT", items_path, class: "nav-link" %>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          RENT
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Watches</a>
+          <a class="dropdown-item" href="#">Purses</a>
+        </div>
       </li>
       <li class="nav-item">
         <%= link_to "SELL", new_item_path, class: "nav-link" %>
@@ -23,10 +27,9 @@
       <li class="nav-item dropdown">
         <div class="btn-group dropleft">
   <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <i class="fas fa-bars"></i>
+<i class="fas fa-user-circle"></i>
   </button>
   <div class="dropdown-menu">
-    <!-- Dropdown menu links -->
     <%= link_to "PROFILE", edit_user_registration_path, class: "nav-link" %>
     <%= link_to "TROUBLESHOOT", "#", class: "nav-link" %>
     <%= link_to "CONTACT", "#", class: "nav-link" %>
