@@ -2,27 +2,21 @@
   <div class = "grid m-5 background-color: #F4F4F4;">
     <% @items.each do |item| %>
     <div class = "card">
-      <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559020160/john-torcasio-662169-unsplash-min_v4acae.jpg" >
-      <p class="text-center p-2"><%= link_to "Rolex", item_path(item) %></p>
+      <img class="card-img-top" src="<%= cl_image_path item.photo, height: 300, width: 400, crop: :fill %>" >
+      <p class="text-center p-2"><%= link_to item.name, item_path(item) %> $<%= item.price %> per DAY</p>
     </div>
     <% end %>
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559014777/janfillem-623483-unsplash-min_suemro.jpg">
-      <a href="/items/2">
-        <p class="text-center p-2">IWC</p>
-      </a>
+        <p class="text-center p-2">IWC $140 per DAY</p>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559114442/Replica-Franck-Muller-8880_a4wily.jpg">
-      <a href="/items/8">
-        <p class="text-center p-2">Frank Muller</p>
-      </a>
+        <p class="text-center p-2">Frank Muller $130 per DAY</p>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559024770/Hublot-Classic-Fusion-Aerofusion-Chronograph-Orlinski-1_m7srkn.jpg">
-      <a href="/items/9">
-        <p class="text-center p-2">Hublot</p>
-      </a>
+        <p class="text-center p-2">Hublot $120 per DAY</p>
     </div>
   </div>
 
@@ -30,33 +24,23 @@
   <div class = "grid m-5 background-color: #F4F4F4;">
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559014775/debora-cardenas-500582-unsplash-min_uey3go.jpg">
-      <a href="/items/3">
-        <p class="text-center p-2">Prada</p>
-      </a>
+        <p class="text-center p-2">Prada $140 per DAY</p>
     </div>
     <div class = "card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559022179/cull-nguyen-1249647-unsplash-min_gax75a.jpg">
-      <a href="/items/4">
-        <p class="text-center p-2">Louis Vuitton</p>
-      </a>
+        <p class="text-center p-2">Louis Vuitton $200 per DAY</p>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559114676/maxresdefault_nmdbak.jpg">
-      <a href="/items/5">
-        <p class="text-center p-2">Coach</p>
-      </a>
+        <p class="text-center p-2">Coach $100 per DAY</p>
     </div>
     <div class="card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559114753/best_Celine_bags_of_all_time_qzocyh.jpg">
-      <a href="/items/6">
-        <p class="text-center p-2">Celine</p>
-      </a>
+        <p class="text-center p-2">Celine $80 per DAY</p>
     </div>
     <div class = "card">
       <img class="card-img-top" src="https://res.cloudinary.com/junm0918/image/upload/v1559026156/Gucci_ehuuli.jpg" class="rounded">
-      <a href="/items/7">
-        <p class="text-center p-2">Gucci</p>
-      </a>
+        <p class="text-center p-2">Gucci $300 per DAY</p>
     </div>
   </div>
 
