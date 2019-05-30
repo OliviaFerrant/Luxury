@@ -3,7 +3,7 @@
     <div class='text-content'>
     </div>
     <button>
-      SHOW ME THE BAGS
+      <%= link_to "SHOW ME BAGS", items_path(category: "Bags") %>
     </button>
   </div>
 </div>
@@ -11,9 +11,9 @@
   <div>
     <div class='text-content'>
     </div>
-    <a class='button'>
-      SHOW ME THE WATCHES
-    </a>
+    <button>
+      <%= link_to "SHOW ME WATCHES", items_path(category: "Watches") %>
+    </button>
   </div>
 </div>
 <!-- <div id='split-pane-or'>
@@ -21,6 +21,3 @@
     <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/bcr-white.png'>
   </div> -->
 </div>
-
-
-
