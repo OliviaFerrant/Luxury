@@ -4,6 +4,5 @@ class PagesController < ApplicationController
   end
 
   def category_page
-
   end
 end

@@ -5,12 +5,15 @@ class ItemsController < ApplicationController
 
   def index
     # raise
-    if params[:category].present?
-      @items = policy_scope(Item.where(category: params[:category]))
-    elsif params[:brand].present? && params[:category].present?
-      @items = policy_scope(Item.where(brand: "%#{params[:brand]}%", category: params[:category]))
-    else
-      @items = policy_scope(Item)
+    @items = policy_scope(Item)
+    if params[:category].present? && params[:query].present?
+      # @items = policy_scope(Item.where(category: params[:category]))
+      @items = @items.search_by_name(params[:query]).where(category: params[:category])
+    elsif params[:query].present?
+      @items = @items.search_by_name(params[:query])
+    elsif params[:category].present?
+      @items = @items.where(category: params[:category])
+      # @items = policy_scope(Item.where(brand: "%#{params[:brand]}%", category: params[:category]))
     end
   end
 

@@ -1,7 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <%= link_to "Watches", items_path(category: "Watches") %> | <%= link_to "Bags", items_path(category: "Bags") %>
+<div class='split-pane col-xs-12 col-sm-12 uiux-side'>
+  <div>
+    <div class='text-content'>
     </div>
+    <button>
+      <%= link_to "SHOW ME BAGS", items_path(category: "Bags") %>
+    </button>
   </div>
+</div>
+<div class='split-pane col-xs-12 col-sm-12 frontend-side'>
+  <div>
+    <div class='text-content'>
+    </div>
+    <button>
+      <%= link_to "SHOW ME WATCHES", items_path(category: "Watches") %>
+    </button>
+  </div>
+</div>
+<!-- <div id='split-pane-or'>
+  <div>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/bcr-white.png'>
+  </div> -->
 </div>
