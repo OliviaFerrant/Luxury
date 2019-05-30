@@ -1,8 +1,13 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class = "left-text">
 <%= link_to "LUXURY", root_path, class: "navbar-brand" %> | <form class="form-inline">
-      <input class="form-control mr-sm-1" id="navBarSearchForm" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" id="navBarSearchForm" type="submit">Search</button>
+      <%= form_tag items_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Find a name"
+      %>
+    <% end %>
     </form>
   </div>
 
