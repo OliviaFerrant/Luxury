@@ -4,19 +4,24 @@
   padding: 0;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .calendar {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #FFFAF7;
-  width: 350px;
+  width: 100%;
   border-radius: 7px;
   box-shadow: 0 0 10px gray;
   text-align: center;
   color: #706677;
   border: 1px solid rgb(230,230,230);
   padding: 40px;
-  margin: 100px;
 }
 
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
 }
+

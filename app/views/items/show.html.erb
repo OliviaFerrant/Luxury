@@ -1,23 +1,22 @@
-<div class = "show">
-  <div class="row justify-content-center">
-    <div class="col-6">
-      <h1><p><%= @item.brand %> | <%= @item.name %></p></h1>
-      <p>$<%= @item.price %> | 1 DAY</p>
-      <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
-    </div>
-        <div class = "calendar">
-          <div class="col-12">
+<div class="show">
+  <div class="show-container">
+    <div class="d-flex mt-5">
+      <div style="position: relative">
+        <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill %>
+        <h3 style="position: absolute; top: 20px; left: 10px">
+          <%= @item.brand %> | <%= @item.name %></h3>
+        <p style="position: absolute; top: 60px; left: 10px">$<%= @item.price %> | 1 DAY</p>
+      </div>
+      <div>
+        <div class= "calendar">
             <%= simple_form_for [@item, @rental] do |f| %>
             <%= f.input :start_date %>
             <%= f.input :end_date %>
             <button type="button" class="btn btn-secondary btn-sm"><%= f.button :submit, "Rent" %></button>
-            <% end %>
-          </div>
+          <% end %>
         </div>
-      <!-- <div>
-        <%= month_calendar(attribute: :start_date, end_attribute: :end_date) do |date| %>
-        <%= date.day %>
-        <% end %>
-      </div> -->
+      </div>
+    </div>
+    <p class="mt-4">Rolex mostly produced mechanical watches, but it has also participated in the development of the original quartz watch movements. Although Rolex has made very few quartz models for its Oyster line, the company's engineers were instrumental in design and implementation of the technology during the late 1960s and early 1970s. In 1968, Rolex collaborated with a consortium of 16 Swiss watch manufacturers to develop the Beta 21 quartz movement </p>
   </div>
 </div>
