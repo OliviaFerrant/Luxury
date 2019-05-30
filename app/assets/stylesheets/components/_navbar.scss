@@ -1,19 +1,25 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: #7F7F91;
-  font-color: #ffffff;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-lewagon .navbar-collapse {
-
   flex-grow: 0;
-}
-
-.fas {
-color: #2A2B2E;
 }
 
 .navbar-lewagon .navbar-brand img  {
   width: 40px;
+}
+
+input[type=text] {
+  width: 150px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.dropdown-item {
+  color: #2A2B2E;
+  background: #7F7F91;
+  font-family: 'Roboto Condensed', sans-serif;
 }
