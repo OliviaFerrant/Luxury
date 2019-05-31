@@ -132,14 +132,17 @@ p {
   border: 1px solid rgb(230,230,230);
 }
 
-.image-cards button {
+.btn-lg {
   font-family: 'Roboto Condensed', sans-serif;
   position: relative;
-  left: 870px;
-  bottom: 200px;
+  left: 320px;
+  bottom: 220px;
+  padding-top: 30px;
   box-shadow: 6px 6px 10px #000000;
+  font-size: 20px;
+  height: 90px;
+  width: 350px;
 }
-
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
