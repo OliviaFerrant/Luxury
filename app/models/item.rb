@@ -16,5 +16,5 @@ class Item < ApplicationRecord
     }
 
   CATEGORIES = ["Watches", "Bags"]
-  BRANDS = ["Patek Philippe", "Audemars Piguet", "Vacheron Constantin", "TagHeuer", "LangeSöhne", "Jaeger-LeCoultre", "Rolex", "Hublot", "Breguet & Fils", "Chopard", "Girard-Perregaux", "Blancpain", "Cartier", "IWC Schaffhausen", "Ulysse Nardin", "Panerai", "Piaget", "Breitling", "Omega", "Montblanc"]
+  BRANDS = ["Patek Philippe", "Audemars Piguet", "Louis Vuitton" , "Vacheron Constantin", "TagHeuer", "LangeSöhne", "Jaeger-LeCoultre", "Rolex", "Hublot", "Breguet & Fils", "Chopard", "Girard-Perregaux", "Blancpain", "Cartier", "IWC Schaffhausen", "Ulysse Nardin", "Panerai", "Piaget", "Breitling", "Omega", "Montblanc"]
 end

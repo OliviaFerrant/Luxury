@@ -1,6 +1,10 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-sm-8">
+<center>
+  <div class="forms-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-8">
+      <h3>List your item</h3>
+      <div class="gap-30"></div>
+      <p>Please fill in the form. (*) are mandatory columns.</p>
       <%= simple_form_for @item do |f| %>
         <%= f.input :name %>
         <%= f.input :category, collection: Item::CATEGORIES %>
@@ -11,8 +15,9 @@
         <%= f.input :photo %>
         <%= f.input :photo_cache, as: :hidden %>
         <%= f.full_error :token %>
-        <%= f.submit 'Save your item!' %>
+        <%= f.submit 'Save your item', class: "btn btn-outline-dark" %>
       <% end %>
+      </div>
     </div>
   </div>
-</div>
+</center>
