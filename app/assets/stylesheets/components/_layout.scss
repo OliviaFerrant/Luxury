@@ -37,6 +37,25 @@
     border-radius: 2px;
 }
 
+.item-banner-card {
+  max-width: 100%;
+  margin: 0px;
+  padding: 180px;
+  box-shadow: 0 0 10px gray;
+}
+
+
+.top-left {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ffffff;
+  font-size: 80px;
+  text-shadow: 6px 6px 10px #000000;
+  position: absolute;
+  top: 341px;
+  left: 11px;
+}
+
+
 h2 {
   margin: 10px;
 }
