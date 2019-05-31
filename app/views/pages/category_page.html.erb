@@ -2,18 +2,19 @@
   <div>
     <div class='text-content'>
     </div>
-    <button>
-      <%= link_to "SHOW ME BAGS", items_path(category: "Bags") %>
-    </button>
+   <div class="btn btn-light btn-lg-bags">
+      <%= link_to 'SHOW ME BAGS', items_path(category: "Bags"), :class => "btn" %>
+    </div>
   </div>
 </div>
 <div class='split-pane col-xs-12 col-sm-12 frontend-side'>
   <div>
     <div class='text-content'>
     </div>
-    <button>
-      <%= link_to "SHOW ME WATCHES", items_path(category: "Watches") %>
-    </button>
+    <div class="btn btn-light btn-lg-watches">
+      <%= link_to 'SHOW ME WATCHES', items_path(category: "Watches"), :class => "btn" %>
+
+      </div>
   </div>
 </div>
 <!-- <div id='split-pane-or'>
