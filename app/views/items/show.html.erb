@@ -3,29 +3,34 @@
     <div class="d-flex mt-5">
       <div style="position: relative">
         <div style="position: relative">
-          <%= cl_image_tag @item.photo, height: 300, width: 400, crop: :fill, style: "width: 100%;object-fit: cover;" %>
-          <div style="position: absolute;top:0;left:0;width:100%;height:100%;box-shadow: inset 0px 111px 143px -95px rgba(0,0,0,1);"></div>
+          <%= cl_image_tag @item.photo, height: 400, width: 500, crop: :fill, style: "width: 80%;object-fit: cover;" %>
+          <div style="position: absolute;top:0;left:0;width:80%;height:100%;box-shadow: inset 0px 111px 143px -95px rgba(0,0,0,1);"></div>
         </div>
-
         <h3 style="position: absolute; top: 20px; left: 10px; font-weight: bold;text-shadow: 2px 2px 8px #000000b8;color: white;">
           <%= @item.brand %> | <%= @item.name %></h3>
-        <p style="position: absolute; top: 60px; left: 10px;text-shadow: 2px 2px 8px #000000b8;color: white;">$<%= @item.price %> | 1 DAY</p>
-      <div class="sexy_line"></div>
-    <h4 class="mt-3">Description</h4>
-    <div class="sexy_line"></div>
-    <p class="mt-4">Wearing a Rolex watch enables entry into a world of unlimited possibilities. Rolex’s story began when founder Hans Wilsdorf created the first waterproof wristwatch – the Oyster – and developed into a range of timepieces that have become icons of watchmaking. Discover Rolex watches on the wrists of pioneers, artists, athletes and visionaries and journey to the very highest summits and the deepest part of the oceans.
+        <h5 style="position: absolute; top: 60px; left: 10px;text-shadow: 2px 2px 8px #000000b8;color: white;">$<%= @item.price %> | 1 DAY</h5>
+        <div class="sexy_line"></div>
+        <h4 class="mt-3">Description</h4>
+        <div class="sexy_line"></div>
+        <p class="mt-4">Wearing a Rolex watch enables entry into a world of unlimited possibilities. Rolex’s story began when founder Hans Wilsdorf created the first waterproof wristwatch – the Oyster – and developed into a range of timepieces that have become icons of watchmaking. Discover Rolex watches on the wrists of pioneers, artists, athletes and visionaries and journey to the very highest summits and the deepest part of the oceans.
 
-    Luxury offers free standard shipping on qualifying orders of $150 or more before taxes and shipping charges are added or $25 flat-rate standard shipping. Return shipping is free for all rentals. BACKGROUND CHECK REQUIRED / NO SECURITY DEPOSIT REQUIRED </p>
+       BACKGROUND CHECK REQUIRED / NO SECURITY DEPOSIT REQUIRED </p>
+        <div class="sexy_line"></div>
+        <h4 class="mt-3">Shipping</h4>
+        <div class="sexy_line"></div>
+        <p class="mt-4">Luxury offers free standard shipping on qualifying orders of $150 or more before taxes and shipping charges are added or $25 flat-rate standard shipping. If you need an item quicker you will have the option to upgrade to expedited shipping at checkout for an additional fee. Return shipping is free for all rentals. </p>
       </div>
-    <div>
-    <div class="calendar">
-            <%= simple_form_for :search, method: "get" do |f| %>
-              <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"} %>
-              <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
-              <%= f.button :submit, "Reserve", class: "btn btn-secondary" %>
-            <% end %>
-          </div>
+      <div>
+        <div class="calendar">
+          <%= simple_form_for :search, method: "get" do |f| %>
+            <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"} %>
+            <div class="gap-30"></div>
+            <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
+            <div class="gap-30"></div>
+            <%= f.button :submit, "Reserve", class: "btn btn-secondary" %>
+          <% end %>
         </div>
+      </div>
     </div>
   </div>
 </div>
