@@ -8,6 +8,10 @@ body {
   background-color: #F4F4F4;
 }
 
+.footer-container {
+  min-height: calc(100vh - 136px);
+}
+
 .carousel {
   font-family: 'Roboto Condensed', sans-serif;
   background-color: #7F7F91;
