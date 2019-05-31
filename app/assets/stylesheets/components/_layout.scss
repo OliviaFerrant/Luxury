@@ -82,12 +82,6 @@ a:hover {
 }
 
 // Extra large devices (large desktops, 1200px and up)
-
-.show-container {
-  width: 700px;
-  margin: auto;
-  height: 100vh;
-}
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
