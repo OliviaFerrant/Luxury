@@ -4,11 +4,13 @@
     <h1><div class="top-left">CHOOSE YOUR LUXURY</div></h1>
 </div>
 
+<br></br>
 
   <div class = "cards m-5 background-color: #F4F4F4;">
     <% @items.each do |item| %>
     <div class = "card">
-      <img class="card-img-top" src="<%= cl_image_path item.photo, height: 300, width: 400, crop: :fill %>" ><h4 class="text-center p-2"><%= link_to item.name, item_path(item) %> | $<%= item.price %>/day</h4>
+      <img class="card-img-top" src="<%= cl_image_path item.photo, height: 300, width: 400, crop: :fill %>" ><p class="text-left p-2"><h5> &nbsp <%= link_to item.name.upcase, item_path(item) %></h5>
+         &nbsp&nbsp$<%= item.price %>/day<br></br></p>
     </div>
     <% end %>
   </div>
